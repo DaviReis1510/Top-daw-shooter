@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bo01q6jrfgsf3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yg4hx"]
+
+[node name="bala" type="Area2D" unique_id=1367492803]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=763926470]
+sprite_frames = SubResource("SpriteFrames_yg4hx")
