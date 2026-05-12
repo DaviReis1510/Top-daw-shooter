@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://1uqtbgxul1dx"]
 
 [ext_resource type="Script" uid="uid://dnjswxay3d3mf" path="res://Scripts/player.gd" id="1_6t5aa"]
+[ext_resource type="PackedScene" uid="uid://bo01q6jrfgsf3" path="res://Scenes/bala.tscn" id="2_fkybt"]
 [ext_resource type="Texture2D" uid="uid://crxu27re8x8t3" path="res://Assets/Skins.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://cogd2cc1yqx5" path="res://Assets/Weapons.png" id="3_fkybt"]
 
@@ -9,6 +10,7 @@ radius = 94.02127
 
 [node name="Player" type="CharacterBody2D" unique_id=1323225507]
 script = ExtResource("1_6t5aa")
+bala_cena = ExtResource("2_fkybt")
 
 [node name="sprite" type="Node2D" parent="." unique_id=1935937889]
 rotation = -1.578061
@@ -51,5 +53,8 @@ region_enabled = true
 region_rect = Rect2(267, 1194, 165, 165)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=237872757]
-position = Vector2(52, 4)
+position = Vector2(56, 6)
 shape = SubResource("CircleShape2D_6t5aa")
+
+[node name="PontaDaArma" type="Marker2D" parent="." unique_id=1476564665]
+position = Vector2(289, 22)
