@@ -43,7 +43,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 6.0
+"speed": 9.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_q33ml"]
@@ -54,8 +54,8 @@ script = ExtResource("1_melus")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=763926470]
 sprite_frames = SubResource("SpriteFrames_yg4hx")
-frame = 2
-frame_progress = 0.15886544
+autoplay = "default"
+frame_progress = 0.54485583
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1111564616]
 shape = SubResource("CircleShape2D_q33ml")
