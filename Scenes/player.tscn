@@ -4,11 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://bo01q6jrfgsf3" path="res://Scenes/bala.tscn" id="2_fkybt"]
 [ext_resource type="Texture2D" uid="uid://crxu27re8x8t3" path="res://Assets/Skins.png" id="2_vgqql"]
 [ext_resource type="Texture2D" uid="uid://cogd2cc1yqx5" path="res://Assets/Weapons.png" id="3_fkybt"]
+[ext_resource type="AudioStream" uid="uid://k5tkeh7wba1x" path="res://Assets/✅barulho-de-tiros-PARA-SACANEAR-SEUS-AMIGOS_-Jailson-souza-_youtube_.ogg" id="5_fkybt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6t5aa"]
 radius = 94.02127
 
 [node name="Player" type="CharacterBody2D" unique_id=1323225507]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_6t5aa")
 bala_cena = ExtResource("2_fkybt")
 
@@ -58,3 +60,6 @@ shape = SubResource("CircleShape2D_6t5aa")
 
 [node name="PontaDaArma" type="Marker2D" parent="." unique_id=1476564665]
 position = Vector2(289, 22)
+
+[node name="somdetiro" type="AudioStreamPlayer2D" parent="." unique_id=668898221]
+stream = ExtResource("5_fkybt")
